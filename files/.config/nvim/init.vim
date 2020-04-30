@@ -1,0 +1,11 @@
+set number
+set expandtab
+set hidden
+set ignorecase
+set background=dark
+set shiftwidth=4
+set smartcase
+set mouse=a
+set nobackup
+set tabstop=4
+syntax on 
