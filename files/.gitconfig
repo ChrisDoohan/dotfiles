@@ -1,0 +1,45 @@
+[user]
+        name = Chris Doohan
+        email = chrisdoohan@gmail.com
+#UI tweaks
+#[color]
+        ui = auto
+[color "diff"]
+        meta = white
+        frag = yellow
+
+#External difftool config
+#[merge]
+#        tool = p4merge
+#        keepBackup = false
+#[mergetool "p4merge"]
+#        trustExitCode = false
+#        cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+#        keepBackup = false
+#        keepTemporaries = false
+#[mergetool]
+#        keepBackup = false
+#[diff]
+#        tool = p4merge
+#[difftool "p4merge"]
+#        cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$LOCAL" "$REMOTE"
+
+#Aliasing
+[alias]
+        st = status -s
+[alias]
+        co = checkout
+[alias]
+        d = diff
+[alias]
+        lg = log --oneline --abbrev-commit --all --graph --decorate --color
+[alias]
+        dlc = diff --cached HEAD^
+[alias]
+        la = !git config -l | grep alias | cut -c 7-
+[alias]
+        nuke = !sh -c 'git branch -D $1 && git push origin :$1' -
+[alias]
+        le = log --oneline --decorate
+[alias]
+        graph = log --graph --all --decorate --stat --date=iso
